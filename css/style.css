@@ -542,7 +542,8 @@ body {
     @media (max-width: 75em) {
       .popup__content {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        text-align: center; } }
   .popup__left {
     width: calc(100% / 3);
     display: table-cell; }
@@ -565,6 +566,10 @@ body {
     @media (max-width: 75em) {
       .popup__img {
         width: 250%; } }
+    @media (max-width: 37.5em) {
+      .popup__img {
+        width: 250%;
+        display: none; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -572,6 +577,11 @@ body {
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        font-size: 1rem;
+        column-count: 1;
+        column-gap: 0; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }

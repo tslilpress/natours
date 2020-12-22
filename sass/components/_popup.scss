@@ -25,6 +25,7 @@
         @include respond(tab-land) {
             display: flex;
             flex-direction: column;
+            text-align: center;
         }
     }
 
@@ -58,6 +59,11 @@
         @include respond(tab-land) {
             width: 250%;
          }
+
+         @include respond(phone) {
+            width: 250%;
+            display: none;
+         }
     }
 
     &__text {
@@ -68,6 +74,12 @@
         column-gap: 4rem;
         column-rule: 1px solid $color-gray-light-2;
         hyphens: auto;
+
+        @include respond(tab-port) {
+            font-size: 1rem;
+            column-count: 1;
+            column-gap: 0;
+         }
     }
 
     &:target {
