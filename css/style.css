@@ -111,7 +111,8 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
-  transition: all .2s; }
+  transition: all .2s;
+  backface-visibility: hidden; }
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -125,7 +126,8 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  backface-visibility: hidden; }
 
 .paragraph {
   font-size: 1.6rem; }
